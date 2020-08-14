@@ -1,0 +1,17 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "installedESLint": true,
+  "plugins": ["react", "jsx-a11y", "import"],
+  "rules": {
+    "comma-dangle": "off",
+    "react/jsx-filename-extension": "off",
+    "react/sort-comp": "off",
+    "class-methods-use-this": "off",
+    "alias": "off",
+    "import": "off"
+  }
+}
