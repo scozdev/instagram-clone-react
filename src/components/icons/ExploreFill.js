@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react";
 
 function SvgExploreFill(props) {
   return (
@@ -16,7 +16,7 @@ function SvgExploreFill(props) {
         fillRule="evenodd"
       />
     </svg>
-  )
+  );
 }
 
-export default SvgExploreFill
+export default SvgExploreFill;

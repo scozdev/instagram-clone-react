@@ -94,14 +94,30 @@ export const Nav = styled.div`
     align-items: center;
   }
 
+  .Header-avatar-mob {
+    display: block;
+  }
+
+  .Header-avatar-desk {
+    display: none;
+  }
+
   @media (min-width: 980px) {
     height: auto;
     border: 0;
     justify-content: flex-end;
     position: static;
 
-    > a {
+    > a,
+    > div {
       margin-left: 20px;
+    }
+
+    .Header-avatar-mob {
+      display: none;
+    }
+    .Header-avatar-desk {
+      display: block;
     }
   }
 `;

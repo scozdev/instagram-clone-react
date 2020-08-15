@@ -1,4 +1,4 @@
-import * as React from 'react'
+import * as React from "react";
 
 function SvgMore(props) {
   return (
@@ -34,7 +34,7 @@ function SvgMore(props) {
         r={4.5}
       />
     </svg>
-  )
+  );
 }
 
-export default SvgMore
+export default SvgMore;
