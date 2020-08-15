@@ -1,4 +1,4 @@
-# Twitter Web Clone
+# Instagram Responsive Web Clone
 
 ## Project setup
 
