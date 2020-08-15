@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const Container = styled.main`
+export const Main = styled.main`
   background-color: #fafafa;
-  height: 100vh;
   padding-top: 30px;
+`;
+export const Container = styled.div`
+  max-width: 935px;
+  height: 100vh;
 
-  section {
-    max-width: 935px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+  margin-left: auto;
+  margin-right: auto;
 `;

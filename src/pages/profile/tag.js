@@ -1,9 +1,7 @@
-function Tag() {
-    return (
-        <div>
-            Tag
-        </div>
-    )
+import React from "react";
+
+function ProfileTag() {
+  return <div>Tag</div>;
 }
 
-export default Tag
+export default ProfileTag;

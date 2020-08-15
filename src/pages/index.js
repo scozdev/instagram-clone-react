@@ -1,18 +1,5 @@
-import React from "react";
-
-import Text from "../components/text";
-
-function index() {
-  return (
-    <>
-      <div>Home</div>
-      <div>
-        <Text tag="h3" size="xxsmall">
-          asd
-        </Text>
-      </div>
-    </>
-  );
-}
-
-export default index;
+export { default as Home } from "./home";
+export { default as Direct } from "./direct";
+export { default as Error } from "./error";
+export { default as Explore } from "./explore";
+export { default as Profile } from "./profile";

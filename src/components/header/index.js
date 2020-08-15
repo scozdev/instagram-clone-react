@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useLocation as locations } from "react-router-dom";
 
 import {
-  Cancel,
   Direct,
   DirectFill,
   Emoji,
@@ -12,45 +11,50 @@ import {
   HomeFill,
   Like,
   LikeFill,
-  Search,
 } from "../icons";
+
+import logo from "../../public/instagram.png";
 
 import { Container, Wrapper, SearchForm, Nav } from "./styles";
 
-function Index() {
+import Avatar from "../avatar";
+
+function Header() {
   let router = locations();
-  const [search, setSearch] = useState(0);
-  const handleHideElement = (e) => {
-    console.log(e);
-    setSearch(e);
-  };
 
   return (
     <Container>
       <Wrapper className="container">
         <Link to="/" className="logo">
-          <img src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png" />
+          <img src={logo} alt="sdf" />
         </Link>
 
         {/* Search */}
-        <SearchForm click={search}>
-          <input type="text" id="text" placeholder="Ara" />
+        <SearchForm>
+          <input
+            type="text"
+            className="fontAwesome"
+            id="text"
+            placeholder="&#xF002; Ara"
+          />
         </SearchForm>
 
         <Nav>
-          <Link to="/">{router.pathname == "/" ? <HomeFill /> : <Home />}</Link>
+          <Link to="/">
+            {router.pathname === "/" ? <HomeFill /> : <Home />}
+          </Link>
 
           <Link to="/direct">
-            {router.pathname == "/direct" ? <DirectFill /> : <Direct />}
+            {router.pathname === "/direct" ? <DirectFill /> : <Direct />}
           </Link>
           <Link to="/explore">
-            {router.pathname == "/explore" ? <ExploreFill /> : <Explore />}
+            {router.pathname === "/explore" ? <ExploreFill /> : <Explore />}
           </Link>
           <Link to="/like">
-            {router.pathname == "/like" ? <LikeFill /> : <Like />}
+            {router.pathname === "/like" ? <LikeFill /> : <Like />}
           </Link>
           <Link to="/profile">
-            <Emoji />
+            <Avatar size={26} />
           </Link>
         </Nav>
       </Wrapper>
@@ -58,4 +62,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Header;

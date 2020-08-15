@@ -1,9 +1,7 @@
-function Save() {
-    return (
-        <div>
-            Save
-        </div>
-    )
+import React from "react";
+
+function ProfileSave() {
+  return <div>Save</div>;
 }
 
-export default Save
+export default ProfileSave;

@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
   padding-left: 20px;
   padding-right: 20px;
 
-  a.logo {
+  > a.logo {
     /* flex: 1 9999 0%; */
     @media (min-width: 980px) {
       flex-grow: 1;
@@ -31,6 +31,12 @@ export const Wrapper = styled.div`
     display: flex;
     min-width: 40px;
     margin-top: 7px;
+
+    img {
+      max-height: 100px;
+      max-width: 103px;
+      object-fit: contain;
+    }
   }
 `;
 
@@ -38,6 +44,7 @@ export const SearchForm = styled.form`
   display: none;
   position: relative;
   color: rgba(var(--f52, 142, 142, 142), 1);
+
   @media (min-width: 980px) {
     display: block;
     text-align: center;
@@ -46,12 +53,19 @@ export const SearchForm = styled.form`
     border: 1px solid rgb(var(--b6a));
     background-color: rgb(var(--b3f));
     border-radius: 4px;
-    input {
+
+    > input {
       outline: 0;
       width: 100%;
       height: 100%;
       background: inherit;
       padding: 3px 25px 3px 36px;
+
+      ::placeholder {
+        text-align: center;
+        color: rgb(var(--f52));
+        font-size: 12px;
+      }
     }
   }
 `;
@@ -74,18 +88,19 @@ export const Nav = styled.div`
   align-items: center;
   justify-content: space-around;
 
-  a {
+  > a {
     font-size: 22px;
     display: flex;
     align-items: center;
   }
+
   @media (min-width: 980px) {
     height: auto;
     border: 0;
     justify-content: flex-end;
     position: static;
 
-    a {
+    > a {
       margin-left: 20px;
     }
   }

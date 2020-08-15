@@ -3,7 +3,7 @@ import React from "react";
 function Direct() {
   return (
     <>
-      <div>Direct</div>;
+      <div>Direct</div>
     </>
   );
 }
