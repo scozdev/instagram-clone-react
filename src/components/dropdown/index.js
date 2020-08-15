@@ -5,6 +5,7 @@ import {
   DropdownButton,
   DropdownItem,
   DropdownMenu,
+  Wrapper,
 } from "./styles";
 
 function Dropdown({ DropButton, children, ...props }) {
@@ -12,6 +13,7 @@ function Dropdown({ DropButton, children, ...props }) {
   return (
     <Container onClick={() => setboolDrop((e) => !e)} {...props}>
       <DropdownButton>{DropButton}</DropdownButton>
+      {boolDrop && <Wrapper onClick={() => setboolDrop(true)} />}
       <DropdownMenu boolDrop={boolDrop}>{children}</DropdownMenu>
     </Container>
   );

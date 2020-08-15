@@ -6,7 +6,7 @@ export const Main = styled.main`
 `;
 export const Container = styled.div`
   max-width: 935px;
-  height: 100vh;
+  /* height: 100vh; */
 
   margin-left: auto;
   margin-right: auto;

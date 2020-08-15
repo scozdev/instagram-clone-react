@@ -9,18 +9,6 @@ export const Header = styled.header`
   display: flex;
   align-items: center;
   padding: 16px;
-
-  .header-author {
-    display: flex;
-    align-items: center;
-
-    .header-author-info {
-      margin-left: 8px;
-    }
-  }
-  .header-more {
-    margin-left: auto;
-  }
 `;
 export const Body = styled.div``;
 export const Footer = styled.div``;
