@@ -1,25 +1,28 @@
 import React from "react";
 import StickyBox from "react-sticky-box";
 
+import { Text, ProfilBox, Post, Footer } from "../../components";
+
 import { Container, Sidebar, Timeline } from "./styles";
-import Post from "../../components/post";
-import ProfilBox from "../../components/profilBox";
-import Text from "../../components/text";
 
 function Home() {
   return (
-    <>
-      <Container>
-        <Sidebar>
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-          <Post />
-        </Sidebar>
-        <Timeline>
-          <StickyBox offsetTop={84}>
+    <Container>
+      <Sidebar>
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+      </Sidebar>
+      <Timeline>
+        <StickyBox offsetTop={84}>
+          <div>
+            {" "}
             <ProfilBox size={56} />
+          </div>
+
+          <div style={{ marginBottom: "24px" }}>
             <div className="Timeline-suggestions">
               <Text>Senin İçin Öneriler</Text>
               <Text size="small">Tümünü Gör</Text>
@@ -28,10 +31,14 @@ function Home() {
             <ProfilBox icon="Takip Et" />
             <ProfilBox gradient icon="Takip Et" />
             <ProfilBox icon="Takip Et" />
-          </StickyBox>
-        </Timeline>
-      </Container>
-    </>
+          </div>
+
+          <div>
+            <Footer />
+          </div>
+        </StickyBox>
+      </Timeline>
+    </Container>
   );
 }
 

@@ -1,17 +1,14 @@
 import React from "react";
 
-import Avatar from "../avatar";
-import { More } from "../icons";
-import Text from "../text";
-import { Container } from "./styles";
+import { Avatar, Text } from "../";
 
-import {} from "./styles";
+import { Container } from "./styles";
 
 function ProfilBox({
   src,
   size = 32,
   name = "selcuk",
-  location = "Montreal, Quebec",
+  location = "Turkey, Istanbul",
   icon,
   gradient,
   bg,

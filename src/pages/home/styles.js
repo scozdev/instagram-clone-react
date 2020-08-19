@@ -11,7 +11,6 @@ export const Timeline = styled.div`
   display: none;
   @media (min-width: 980px) {
     display: block;
-    height: 100vh;
   }
   article {
     margin-top: 18px;

@@ -1,7 +1,6 @@
 import React from "react";
 
-import Header from "../header";
-import Footer from "../footer";
+import { Header, Footer } from "../";
 
 import { Main, Container } from "./styles";
 
@@ -12,7 +11,7 @@ function Layout({ children }) {
       <Main>
         <Container>{children}</Container>
       </Main>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

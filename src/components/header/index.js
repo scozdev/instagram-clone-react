@@ -1,10 +1,12 @@
 import React from "react";
 import { Link, useLocation as locations } from "react-router-dom";
 
+import { Avatar, Dropdown } from "../";
+import { DropdownItem } from "../dropdown/profileItem";
+
 import {
   Direct,
   DirectFill,
-  Emoji,
   Explore,
   ExploreFill,
   Home,
@@ -14,15 +16,11 @@ import {
   Profil,
   Ayarlar,
   Kaydedildi,
+  KaydedildiFill,
 } from "../icons";
 
 import logo from "../../public/instagram.png";
-
 import { Container, Wrapper, SearchForm, Nav } from "./styles";
-
-import Avatar from "../avatar";
-import Dropdown from "../dropdown";
-import { DropdownItem } from "../dropdown/profileItem";
 
 function Header() {
   let router = locations();
@@ -70,10 +68,10 @@ function Header() {
               <div>Profil</div>
             </DropdownItem>
             <DropdownItem to="/profile/save">
-              <Kaydedildi />
+              <KaydedildiFill />
               <div>Kaydedildi</div>
             </DropdownItem>
-            <DropdownItem to="/profile/edit">
+            <DropdownItem to="/accounts/edit/">
               <Ayarlar />
               <div>Ayarlar</div>
             </DropdownItem>

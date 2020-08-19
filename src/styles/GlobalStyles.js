@@ -60,6 +60,10 @@ label {
   font-weight: 600;
 }
 
+ul {
+  list-style: none;
+}
+
 .container {
   max-width: 975px;
   margin-left: auto;

@@ -11,3 +11,13 @@ export const Container = styled.div`
   margin-left: auto;
   margin-right: auto;
 `;
+export const ProfilContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 20vh;
+
+  margin-left: auto;
+  margin-right: auto;
+`;
