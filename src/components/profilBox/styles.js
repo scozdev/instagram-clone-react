@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.article`
   height: 62px;
@@ -18,10 +18,14 @@ export const Container = styled.article`
 
     .profil-author-info {
       margin-left: 20px;
+      cursor: pointer;
 
       span {
         color: rgba(var(--f52));
       }
+    }
+    .profil-author-info > div:first-child:hover {
+      text-decoration: underline;
     }
   }
   .profil-more {
@@ -29,4 +33,4 @@ export const Container = styled.article`
     font-weight: 600;
     font-size: 12px;
   }
-`;
+`

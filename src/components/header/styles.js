@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.header`
   z-index: 90;
@@ -9,7 +9,7 @@ export const Container = styled.header`
 
   background-color: white;
   border-bottom: 1px solid rgb(var(--b6a));
-`;
+`
 
 export const Wrapper = styled.div`
   height: var(--header-height);
@@ -38,7 +38,7 @@ export const Wrapper = styled.div`
       object-fit: contain;
     }
   }
-`;
+`
 
 export const SearchForm = styled.form`
   display: none;
@@ -55,6 +55,7 @@ export const SearchForm = styled.form`
     border-radius: 4px;
 
     > input {
+      border: 0;
       outline: 0;
       width: 100%;
       height: 100%;
@@ -67,8 +68,13 @@ export const SearchForm = styled.form`
         font-size: 12px;
       }
     }
+    > input:focus {
+      ::placeholder {
+        text-align: left;
+      }
+    }
   }
-`;
+`
 
 export const Nav = styled.div`
   /* flex: 1 0 0%; */
@@ -120,4 +126,4 @@ export const Nav = styled.div`
       display: block;
     }
   }
-`;
+`

@@ -1,9 +1,10 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react'
+import styled, { css } from 'styled-components'
 
 export const Image = styled.figure`
   display: inline-flex;
   border-radius: 999px;
+  cursor: pointer;
 
   ${(props) =>
     props.gradient &&
@@ -22,19 +23,19 @@ export const Image = styled.figure`
   img {
     border-radius: inherit;
   }
-`;
+`
 
 function Avatar({
   size = 40,
-  alt = "profile",
-  src = "https://scontent-frt3-2.cdninstagram.com/v/t51.2885-19/44884218_345707102882519_2446069589734326272_n.jpg?_nc_ht=scontent-frt3-2.cdninstagram.com&_nc_ohc=d3zLaxzyOPwAX8g3inT&oh=98701cb4d682b3465c5ee4e0f7a689ac&oe=5F62C68F&ig_cache_key=YW5vbnltb3VzX3Byb2ZpbGVfcGlj.2",
-  gradient = false,
+  alt = 'profile',
+  src = 'https://abs.twimg.com/sticky/default_profile_images/default_profile_bigger.png',
+  gradient = false
 }) {
   return (
     <Image gradient={gradient}>
       <img src={src} alt={alt} width={size} height={size}></img>
     </Image>
-  );
+  )
 }
 
-export default Avatar;
+export default Avatar

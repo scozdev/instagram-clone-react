@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.article`
   background: #fff;
@@ -7,14 +7,14 @@ export const Container = styled.article`
   border-radius: 3px;
 
   margin-bottom: 60px;
-`;
+`
 export const Header = styled.header`
   height: 62px;
   display: flex;
   align-items: center;
   padding: 16px;
-`;
-export const Body = styled.div``;
+`
+export const Body = styled.div``
 
 export const Footer = styled.div`
   > div:first-child {
@@ -26,6 +26,8 @@ export const Footer = styled.div`
   .Post-footer-actions {
     display: flex;
     align-items: center;
+
+    margin-top: 4px;
 
     button {
       display: flex;
@@ -44,6 +46,8 @@ export const Footer = styled.div`
     }
   }
   .Post-footer-viewcount {
+    margin-bottom: 8px;
+
     span {
       font-weight: 600;
     }
@@ -51,6 +55,23 @@ export const Footer = styled.div`
       margin-left: 5px;
     }
   }
+
+  .Post-footer-comment {
+    span {
+      margin-right: 4px;
+    }
+    .Post-footer-comment-link {
+      color: rgba(var(--i1d, 38, 38, 38), 1);
+      font-weight: 600;
+      margin-right: 4px;
+    }
+    .Post-footer-comment-tag {
+      color: rgba(var(--fe0));
+      text-decoration: none;
+      margin-right: 4px;
+    }
+  }
+
   .Post-footer-form {
     display: flex;
 
@@ -81,11 +102,11 @@ export const Footer = styled.div`
       color: rgba(var(--d69));
     }
   }
-`;
+`
 
-export const Actions = styled.div``;
+export const Actions = styled.div``
 
-export const ViewCount = styled.div``;
-export const CommetList = styled.div``;
-export const DateTime = styled.div``;
-export const CommetForm = styled.form``;
+export const ViewCount = styled.div``
+export const CommetList = styled.div``
+export const DateTime = styled.div``
+export const CommetForm = styled.form``

@@ -1,10 +1,8 @@
-export { default as Avatar } from "./avatar";
-export { default as Dropdown } from "./dropdown";
-export { default as Header } from "./header";
-export { default as Footer } from "./footer";
-// export { default as Icons } from "./icons";
-export { default as Layout } from "./layout";
-export { default as ProfilLayout } from "./layout/profil";
-export { default as ProfilBox } from "./profilBox";
-export { default as Post } from "./post";
-export { default as Text } from "./text";
+export { default as Avatar } from './avatar'
+export { default as Dropdown } from './dropdown'
+export { default as Header } from './header'
+export { default as Footer } from './footer'
+export { default as Layout } from './layout'
+export { default as ProfilLayout } from './layout/profil'
+export { default as ProfilBox } from './profilBox'
+export { default as Post } from './post'

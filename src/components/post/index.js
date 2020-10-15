@@ -1,23 +1,16 @@
-import React from "react";
+import React from 'react'
 
-import {
-  Ayarlar,
-  Kaydedildi,
-  More,
-  Profil,
-  Like,
-  Comment,
-  Save,
-  Direct,
-} from "../icons";
-import { Avatar, Text, ProfilBox, Dropdown } from "../";
-import { DropdownItem } from "../dropdown/profileItem";
+import { More, Like, Comment, Save, Direct } from '../icons'
+import { ProfilBox, Dropdown } from '../'
+import { DropdownItem } from '../dropdown/profileItem'
 
-import { Container, Header, Body, Footer } from "./styles";
+import { Container, Body, Footer } from './styles'
+import { Link } from 'react-router-dom'
 
 function Post({
-  name = "selçuk özdemir",
-  img = "https://instagram.fsaw1-5.fna.fbcdn.net/v/t51.2885-15/sh0.08/e35/s750x750/117394957_302631394154110_5886118661349164425_n.jpg?_nc_ht=instagram.fsaw1-5.fna.fbcdn.net&_nc_cat=1&_nc_ohc=2c7dXA_0AmkAX8u0zpx&oh=097563feab47484173c6198126c5ce8f&oe=5F62B1A4",
+  name = 'selçuk özdemir',
+  alt = '',
+  img = 'https://gazetekarinca.com/wp-content/uploads/2020/01/Picasso.jpg'
 }) {
   return (
     <Container>
@@ -34,12 +27,12 @@ function Post({
       />
 
       <Body>
-        <img src={img} alt="" />
+        <img src={img} alt={alt} />
       </Body>
 
       <Footer>
         <div>
-          <div className="Post-footer-actions">
+          <section className="Post-footer-actions">
             <button>
               <Like />
             </button>
@@ -52,13 +45,28 @@ function Post({
             <button>
               <Save />
             </button>
-          </div>
-          <div className="Post-footer-viewcount">
+          </section>
+          <section className="Post-footer-viewcount">
             <button>
               <span>19.000</span>
               <span>beğenme</span>
             </button>
-          </div>
+          </section>
+          <section className="Post-footer-comment">
+            <Link className="Post-footer-comment-link" to="/selcuk">
+              webtekno
+            </Link>
+            <span>Evet bu gönderilorem lorem</span>
+            <Link to="/" className="Post-footer-comment-tag">
+              #Etiket
+            </Link>
+            <Link to="/" className="Post-footer-comment-tag">
+              #Etiket
+            </Link>
+            <Link to="/" className="Post-footer-comment-tag">
+              #Etiket
+            </Link>
+          </section>
         </div>
         <form className="Post-footer-form">
           <textarea placeholder="Yorum ekle.."></textarea>
@@ -66,7 +74,7 @@ function Post({
         </form>
       </Footer>
     </Container>
-  );
+  )
 }
 
-export default Post;
+export default Post

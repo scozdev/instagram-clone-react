@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react'
 
-import { Header, Footer } from "../";
+import { Header } from '../'
 
-import { Main, Container } from "./styles";
+import { Main, Container } from './styles'
 
 function Layout({ children }) {
   return (
@@ -13,7 +13,7 @@ function Layout({ children }) {
       </Main>
       {/* <Footer /> */}
     </>
-  );
+  )
 }
 
-export default Layout;
+export default Layout

@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-import { Link } from "react-router-dom";
+import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 export const DropdownItem = styled(Link)`
   display: flex;
@@ -10,10 +10,20 @@ export const DropdownItem = styled(Link)`
 
   svg {
     margin-right: 12px;
+    font-size: 16px;
+  }
+
+  :last-child {
+    border-top: 1px solid rgb(var(--b6a));
+  }
+
+  :hover {
+    background: rgb(var(--b3f));
   }
 
   &:focus,
-  &:active {
+  &:active,
+  &:hover {
     outline: 0;
     background: rgb(var(--bb2));
 
@@ -26,4 +36,4 @@ export const DropdownItem = styled(Link)`
       border-bottom-left-radius: 6px;
     }
   }
-`;
+`

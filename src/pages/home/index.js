@@ -1,9 +1,9 @@
-import React from "react";
-import StickyBox from "react-sticky-box";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-import { Text, ProfilBox, Post, Footer } from "../../components";
+import { ProfilBox, Post, Footer } from '../../components'
 
-import { Container, Sidebar, Timeline } from "./styles";
+import { Container, Sidebar, Timeline } from './styles'
 
 function Home() {
   return (
@@ -16,16 +16,17 @@ function Home() {
         <Post />
       </Sidebar>
       <Timeline>
-        <StickyBox offsetTop={84}>
+        <div style={{ position: 'sticky', top: '100px' }}>
           <div>
-            {" "}
             <ProfilBox size={56} />
           </div>
 
-          <div style={{ marginBottom: "24px" }}>
+          <div style={{ marginBottom: '24px' }}>
             <div className="Timeline-suggestions">
-              <Text>Senin İçin Öneriler</Text>
-              <Text size="small">Tümünü Gör</Text>
+              <span>Senin İçin Öneriler</span>
+              <Link to="/" className="small">
+                Tümünü Gör
+              </Link>
             </div>
 
             <ProfilBox icon="Takip Et" />
@@ -36,10 +37,10 @@ function Home() {
           <div>
             <Footer />
           </div>
-        </StickyBox>
+        </div>
       </Timeline>
     </Container>
-  );
+  )
 }
 
-export default Home;
+export default Home

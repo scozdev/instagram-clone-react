@@ -1,9 +1,10 @@
-import React from "react";
-import { Route, Switch } from "react-router-dom";
+import React from 'react'
+import { Route, Switch } from 'react-router-dom'
 
-import GlobalStyles from "./styles/GlobalStyles";
-import Layout from "./components/layout";
-import { Home, Explore, Direct, Profile, Error } from "./pages";
+import Layout from './components/layout'
+import { Home, Explore, Direct, Profile, Error } from './pages'
+
+import GlobalStyles from './styles/GlobalStyles'
 
 function Router() {
   return (
@@ -20,7 +21,7 @@ function Router() {
 
       <GlobalStyles />
     </>
-  );
+  )
 }
 
-export default Router;
+export default Router

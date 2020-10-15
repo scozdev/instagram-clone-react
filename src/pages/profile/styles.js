@@ -1,8 +1,8 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 const alignCenter = css`
   display: flex;
   align-items: center;
-`;
+`
 
 export const Container = styled.main`
   height: 100vh;
@@ -63,9 +63,15 @@ export const Container = styled.main`
     a {
       display: flex;
       align-items: center;
+      color: rgba(var(--f52));
+
       svg {
         margin-right: 6px;
       }
     }
+
+    .profile--active {
+      color: rgba(var(--i1d));
+    }
   }
-`;
+`

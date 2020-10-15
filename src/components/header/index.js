@@ -1,8 +1,8 @@
-import React from "react";
-import { Link, useLocation as locations } from "react-router-dom";
+import React from 'react'
+import { Link, useLocation as locations } from 'react-router-dom'
 
-import { Avatar, Dropdown } from "../";
-import { DropdownItem } from "../dropdown/profileItem";
+import { Avatar, Dropdown } from '../'
+import { DropdownItem } from '../dropdown/profileItem'
 
 import {
   Direct,
@@ -15,15 +15,14 @@ import {
   LikeFill,
   Profil,
   Ayarlar,
-  Kaydedildi,
-  KaydedildiFill,
-} from "../icons";
+  SaveBorder
+} from '../icons'
 
-import logo from "../../public/instagram.png";
-import { Container, Wrapper, SearchForm, Nav } from "./styles";
+import logo from '../../public/instagram.png'
+import { Container, Wrapper, SearchForm, Nav } from './styles'
 
 function Header() {
-  let router = locations();
+  let router = locations()
 
   return (
     <Container>
@@ -44,17 +43,17 @@ function Header() {
 
         <Nav>
           <Link to="/">
-            {router.pathname === "/" ? <HomeFill /> : <Home />}
+            {router.pathname === '/' ? <HomeFill /> : <Home />}
           </Link>
 
           <Link to="/direct">
-            {router.pathname === "/direct" ? <DirectFill /> : <Direct />}
+            {router.pathname === '/direct' ? <DirectFill /> : <Direct />}
           </Link>
           <Link to="/explore">
-            {router.pathname === "/explore" ? <ExploreFill /> : <Explore />}
+            {router.pathname === '/explore' ? <ExploreFill /> : <Explore />}
           </Link>
           <Link to="/like">
-            {router.pathname === "/like" ? <LikeFill /> : <Like />}
+            {router.pathname === '/like' ? <LikeFill /> : <Like />}
           </Link>
           <Link to="/profile" className="Header-avatar-mob">
             <Avatar size={26} />
@@ -68,7 +67,7 @@ function Header() {
               <div>Profil</div>
             </DropdownItem>
             <DropdownItem to="/profile/save">
-              <KaydedildiFill />
+              <SaveBorder />
               <div>Kaydedildi</div>
             </DropdownItem>
             <DropdownItem to="/accounts/edit/">
@@ -82,7 +81,7 @@ function Header() {
         </Nav>
       </Wrapper>
     </Container>
-  );
+  )
 }
 
-export default Header;
+export default Header

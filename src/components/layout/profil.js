@@ -1,11 +1,9 @@
-import React from "react";
+import React from 'react'
 
-import { Header, Footer } from "../";
-
-import { Main, Container, ProfilContainer } from "./styles";
+import { ProfilContainer } from './styles'
 
 function Layout({ children }) {
-  return <ProfilContainer>{children}</ProfilContainer>;
+  return <ProfilContainer>{children}</ProfilContainer>
 }
 
-export default Layout;
+export default Layout

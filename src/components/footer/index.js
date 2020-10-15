@@ -1,49 +1,49 @@
-import React from "react";
+import React from 'react'
 
-import { Container } from "./styles";
+import { Container } from './styles'
 
 function Footer({ color, ...props }) {
   return (
     <Container color={color} {...props}>
       <ul>
         <li>
-          <a>Hakkında</a>
+          <span>Hakkında</span>
         </li>
         <li>
-          <a>Yardım</a>
+          <span>Yardım</span>
         </li>
         <li>
-          <a>Basın</a>
+          <span>Basın</span>
         </li>
         <li>
-          <a>API</a>
+          <span>API</span>
         </li>
         <li>
-          <a>İş Fırsatları</a>
+          <span>İş Fırsatları</span>
         </li>
         <li>
-          <a>Gizlilik</a>
+          <span>Gizlilik</span>
         </li>
         <li>
-          <a>Koşullar</a>
+          <span>Koşullar</span>
         </li>
         <li>
-          <a>Konumlar</a>
+          <span>Konumlar</span>
         </li>
         <li>
-          <a>Başlıca Hesaplar</a>
+          <span>Başlıca Hesaplar</span>
         </li>
         <li>
-          <a>Konu Etiketleri</a>
+          <span>Konu Etiketleri</span>
         </li>
         <li>
-          <a>Dil</a>
+          <span>Dil</span>
         </li>
       </ul>
 
       <span>© 2020 INSTAGRAM FROM FACEBOOK</span>
     </Container>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

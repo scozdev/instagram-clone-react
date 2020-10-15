@@ -1,17 +1,17 @@
-import React from "react";
+import React from 'react'
 
-import { Avatar, Text } from "../";
+import { Avatar } from '../'
 
-import { Container } from "./styles";
+import { Container } from './styles'
 
 function ProfilBox({
   src,
   size = 32,
-  name = "selcuk",
-  location = "Turkey, Istanbul",
+  name = 'selcuk',
+  location = 'Turkey, Istanbul',
   icon,
   gradient,
-  bg,
+  bg
 }) {
   return (
     <Container bg={bg}>
@@ -20,17 +20,17 @@ function ProfilBox({
 
         <div className="profil-author-info">
           <div>
-            <Text tag="b">{name}</Text>
+            <b>{name}</b>
           </div>
           <div>
-            <Text size="xsmall">{location}</Text>
+            <span size="xsmall">{location}</span>
           </div>
         </div>
       </div>
 
       {icon && <button className="profil-more">{icon}</button>}
     </Container>
-  );
+  )
 }
 
-export default ProfilBox;
+export default ProfilBox

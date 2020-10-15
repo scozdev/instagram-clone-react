@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.footer`
   font-size: 11px;
@@ -18,7 +18,7 @@ export const Container = styled.footer`
     margin-bottom: 16px;
 
     li {
-      a {
+      span {
         cursor: pointer;
         font-weight: 400;
         line-height: 13px;
@@ -28,10 +28,10 @@ export const Container = styled.footer`
             color: rgba(var(--fe0));
           `}
       }
-      a:after {
-        content: "  ";
+      span:after {
+        content: '  ';
         margin: 0 0.25em 0 0.25em;
       }
     }
   }
-`;
+`

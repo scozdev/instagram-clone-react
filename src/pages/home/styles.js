@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 export const Container = styled.div`
   @media (min-width: 980px) {
@@ -6,7 +6,7 @@ export const Container = styled.div`
     grid-template-columns: 1fr 295px;
     grid-gap: 30px;
   }
-`;
+`
 export const Timeline = styled.div`
   display: none;
   @media (min-width: 980px) {
@@ -35,9 +35,14 @@ export const Timeline = styled.div`
     padding-top: 4px;
     padding-bottom: 4px;
 
+    font-weight: 600;
+
     span:first-child {
       color: rgba(var(--f52));
     }
+    a {
+      color: rgba(var(--i1d));
+    }
   }
-`;
-export const Sidebar = styled.div``;
+`
+export const Sidebar = styled.div``

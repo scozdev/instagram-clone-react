@@ -1,9 +1,8 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components'
 
-import "./variables.css";
+import './variables.css'
 
 export default createGlobalStyle`
-  
 
   * {
   margin: 0;
@@ -82,9 +81,7 @@ ul {
 .xxsmall {
   font-size: 10px;
 }
-
 .fontAwesome {
   font-family: 'Helvetica', FontAwesome, sans-serif;
 }
-
-`;
+`

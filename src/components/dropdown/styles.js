@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled, { css } from 'styled-components'
 
 export const Container = styled.div`
   position: relative;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   /* &:hover > div {
     display: block;
   } */
-`;
+`
 export const DropdownMenu = styled.div`
   display: none;
   ${(props) =>
@@ -27,13 +27,15 @@ export const DropdownMenu = styled.div`
   box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.1);
   border-radius: 6px;
   z-index: 1;
-`;
-export const DropdownButton = styled.button``;
+`
 export const DropdownItem = styled.div`
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 
+  :hover {
+    background: red;
+  }
   &:focus,
   &:active {
     outline: 0;
@@ -48,7 +50,7 @@ export const DropdownItem = styled.div`
       border-bottom-left-radius: 6px;
     }
   }
-`;
+`
 export const Wrapper = styled.div`
   position: fixed;
   top: 0;
@@ -56,4 +58,4 @@ export const Wrapper = styled.div`
 
   width: 100%;
   height: 100%;
-`;
+`
